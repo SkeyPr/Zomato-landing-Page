@@ -1,1 +1,1 @@
-#My attempt at cloning the zomato landing page
+#My attempt at cloning the zomato landing page.
