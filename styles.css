@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.Hero_Section
+.Hero__Section
 {
     background: url(./images/heroSectionBackground.png);
     background-size: cover;
@@ -58,4 +58,53 @@
     {
         display: none;
     }
+}
+
+/* pretty much all the stuff in the hero section*/
+.Hero__Section_container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: calc(60vh - 65px);
+}
+
+/*the main zomato text logo*/
+.Hero__Section_logo
+{
+    width: 285px;
+    height: auto;
+}
+
+/*for the "discover foods..." part*/
+.Hero__Section_title
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 350;
+}
+
+
+/*the container containing navigation bars at the center of the page*/
+.Hero__Section_input_container
+{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/*the navigation bars below the logo*/
+.input_container_location,
+.input_container_search
+{
+    padding: 5px;
+    border: none;
+    outline: none;
 }
