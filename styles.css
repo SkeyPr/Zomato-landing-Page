@@ -47,18 +47,6 @@
     border: solid 1px white; 
 }
 
-/*In order to keep the display of the website on a smaller screen to be organized*/
-@media only screen and (max-width: 600px)
-{
-    .navbar__menu_container .user_icon
-    {
-        display: flex;
-    }
-    .link
-    {
-        display: none;
-    }
-}
 
 /* pretty much all the stuff in the hero section*/
 .Hero__Section_container
@@ -107,4 +95,105 @@
     padding: 5px;
     border: none;
     outline: none;
+}
+
+.input_container_location
+{
+    width: 35%;
+    border-right: solid 2px #e0e0e0;
+}
+
+.input_container_search
+{
+    width: 65%;
+}
+
+/*In order to keep the display of the website on a smaller screen to be organized*/
+@media only screen and (max-width: 600px)
+{
+    .navbar__menu_container .user_icon
+    {
+        display: flex;
+    }
+    .link
+    {
+        display: none;
+    }
+    .Hero__Section_container
+    {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_container_location
+    .input_container_search
+    {
+        padding: 18px;
+        border-radius: 10px;
+        width: 98%;
+    }
+    .Hero__Section_container
+    {
+        height: calc(80vh - 40px);
+    }
+    .Hero__Section_title
+    {
+        font-size: 18px;
+        width: 95%;
+    }
+}
+
+.offering__container
+{
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.offering
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.offering__card
+{
+    border-radius: 10px;
+    /*background-color: aqua;*/
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 0.4s ease;
+
+}
+
+.offering__card:hover
+{
+    transform: scale(1.04);
+}
+
+.offering__card img
+{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.offering__content
+{
+    padding: 10px;
+}
+
+.offering__content h2
+{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.offering__content p
+{
+    font-size: 12.5px;
 }
