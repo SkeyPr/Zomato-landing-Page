@@ -1,2 +1,2 @@
 # Zomato-landing-Page
-Zomato landing page 
+My attempt at cloning the Zomato landing page 
